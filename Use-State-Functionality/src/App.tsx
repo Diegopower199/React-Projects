@@ -1,12 +1,19 @@
-import { BrowserLinks } from "./components/BrowserLinks";
-
-// Lo de links no lo voy a hacer en este proyecto, lo hago en otro
+import { Routes, Route } from "react-router-dom";
+import { Counter } from "./components/Counter";
+import { NavLinks } from "./components/NavLinks";
+import { SearchFilmFilter } from "./components/SearchFilmFilter";
+import { TodoList } from "./components/TodoList";
+import { ToggleText } from "./components/ToggleText";
 
 function App() {
   return (
-    <>
-      <BrowserLinks />
-    </>
+    <Routes>
+      <Route path="/" element={<NavLinks />} />
+      <Route path="/counter" element={<Counter />} />
+      <Route path="/search-film-filter" element={<SearchFilmFilter />} />
+      <Route path="/todo-list" element={<TodoList />} />
+      <Route path="/toggle-text" element={<ToggleText />} />
+    </Routes>
   );
 }
 
