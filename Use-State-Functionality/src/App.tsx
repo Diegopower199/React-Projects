@@ -1,18 +1,18 @@
 import { Routes, Route } from "react-router-dom";
-import { Counter } from "./components/Counter";
 import { NavLinks } from "./components/NavLinks";
-import { SearchFilmFilter } from "./components/SearchFilmFilter";
-import { TodoList } from "./components/TodoList";
-import { ToggleText } from "./components/ToggleText";
+import { CounterPage } from "./pages/counter";
+import { TodoListPage } from "./pages/todolist";
+import { SearchFilmFilterPage } from "./pages/search-film-filter";
+import { ToggleTextPage } from "./pages/toggletext";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<NavLinks />} />
-      <Route path="/counter" element={<Counter />} />
-      <Route path="/search-film-filter" element={<SearchFilmFilter />} />
-      <Route path="/todo-list" element={<TodoList />} />
-      <Route path="/toggle-text" element={<ToggleText />} />
+      <Route path="/counter" element={<CounterPage />} />
+      <Route path="/search-film-filter" element={<SearchFilmFilterPage />} />
+      <Route path="/todo-list" element={<TodoListPage />} />
+      <Route path="/toggle-text" element={<ToggleTextPage />} />
     </Routes>
   );
 }
