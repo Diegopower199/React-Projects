@@ -13,10 +13,6 @@ export const Home = () => {
         <h1>
           <Link to="/locations">Locations</Link>
         </h1>
-
-        <h1>
-          <Link to="/episodes">Episodes</Link>
-        </h1>
       </>
     </>
   );

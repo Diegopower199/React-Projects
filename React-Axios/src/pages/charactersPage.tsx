@@ -1,5 +1,4 @@
-import { Characters } from "../components/Characters";
-
+import { Characters } from "../components/Characters/Characters";
 
 export const CharactersPage = () => {
   return (
